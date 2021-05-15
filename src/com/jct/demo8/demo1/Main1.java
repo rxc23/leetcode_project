@@ -27,7 +27,7 @@ public class Main1 {
         List<Person> list = Lists.newArrayList(p1, p2, p3);
         list.forEach(person -> System.out.println(person.toString()));
         System.out.println("--------------------");
-        list.forEach(System.out::println);
+        list.forEach(person -> System.out.println(person.toString()));
     }
 
 
@@ -49,6 +49,7 @@ public class Main1 {
     /**
      * 多条件过滤
      * 年龄>12且女性
+     *
      */
     @Test
     public void test3() {
@@ -56,6 +57,7 @@ public class Main1 {
         Person p2 = new Person("lisi", 14, "male");
         Person p3 = new Person("wangwu", 21, "female");
         ArrayList<Person> list = Lists.newArrayList(p1, p2, p3);
+        //lmabda表达式取反->!
         Collections2.filter(list, person -> person.getAge() > 12).stream().
                 filter(person -> !person.getSex().equalsIgnoreCase("male"))
                 .forEach(person -> System.out.println(person.toString()));
