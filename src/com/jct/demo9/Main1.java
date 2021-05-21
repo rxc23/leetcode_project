@@ -1,6 +1,9 @@
 package com.jct.demo9;
 
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * lambda表达式--方法引用
  *
@@ -38,8 +41,8 @@ public class Main1 {
          * Person{name='wangwu', age=18}
          * Person{name='zhaoliu', age=20}
          */
-//        Arrays.sort(people,Comparator.comparing(Person::getAge,((o1, o2) -> Integer.compare(o1,o2))));
-//        Arrays.sort(people,(o1, o2) -> o1.getAge()-o2.getAge());
+        Arrays.sort(people, Comparator.comparing(Person::getAge, ((o1, o2) -> Integer.compare(o1, o2))));
+        Arrays.sort(people, (o1, o2) -> o1.getAge() - o2.getAge());
         for (Person person : people) {
             System.out.println(person);
         }
