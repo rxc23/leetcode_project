@@ -1,6 +1,5 @@
 package com.json.demo1;
 
-
 import net.sf.json.JSONObject;
 import org.junit.Test;
 
@@ -22,7 +21,7 @@ public class Main1 {
         System.out.println(printUser(user).toString());
     }
 
-    private User printUser(User user) {
+    public User printUser(User user) {
         return user;
     }
 
