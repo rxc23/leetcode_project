@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.io.UnsupportedEncodingException;
 
 /**
+ * 字符串操作方法
+ *
  * @Author: dongjie
  * @Date: 2021/5/21 14:23
  */
@@ -65,6 +67,7 @@ public class Main1 {
         }
         System.out.println();
         System.out.println("------------------------------");
+
         String s2 = "he/ll/o/wo/r/l/d";
         String[] split = s2.split("/");//以/为分隔符
         for (String t1 : split) {
@@ -72,32 +75,33 @@ public class Main1 {
         }
         System.out.println();
         System.out.println("------------------------------");
+
         String s3 = "he.ll.o.wo.r.ld";
         String[] split1 = s3.split("\\.");//以.为分隔符
         for (String t2 : split1) {
             System.out.print(t2);
         }
-
         System.out.println();
         System.out.println("------------------------------");
+
         String s4 = "he|ll|o|wo|r|ld";
         String[] split2 = s3.split("\\|");//以|为分隔符
         System.out.print("这是以|为分隔符：");
         for (String t2 : split1) {
             System.out.print(t2);
         }
-
         System.out.println();
         System.out.println("------------------------------");
+
         String s5 = "he*ll*o*wo*r*ld";
         String[] split3 = s5.split("\\*");//以*为分隔符
         System.out.print("这是以*为分隔符：");
         for (String t3 : split3) {
             System.out.print(t3);
         }
-
         System.out.println();
         System.out.println("------------------------------");
+
         String s6 = "上海^上海市@闵行区#吴中路";
         String[] split4 = s6.split("\\^|@|#");
         System.out.print("这是多个分隔符：");
