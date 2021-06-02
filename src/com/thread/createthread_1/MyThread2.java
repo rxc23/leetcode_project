@@ -1,4 +1,4 @@
-package com.thread.createthread4;
+package com.thread.createthread_1;
 
 public class MyThread2 implements Runnable {
     @Override
