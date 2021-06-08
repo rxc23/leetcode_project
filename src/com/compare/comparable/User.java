@@ -1,4 +1,4 @@
-package com.comparableandcomparator.comparable;
+package com.compare.comparable;
 
 public class User implements Comparable<User> {
     String userName;

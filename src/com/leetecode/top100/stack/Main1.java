@@ -29,6 +29,9 @@ public class Main1 {
 
     }
 
+    /**
+     * 栈的最小元素
+     */
     private static void min() {
         System.out.println("最小元素：" + assitStack.peek());
     }

@@ -1,4 +1,4 @@
-package com.comparableandcomparator;
+package com.compare;
 
 import java.util.Comparator;
 import java.util.Map;
