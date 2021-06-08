@@ -1,4 +1,4 @@
-package com.leetecode.top100.dynamicprogramming;
+package com.leetecode.top100.dp;
 
 import java.util.Scanner;
 
